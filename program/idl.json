@@ -8791,6 +8791,33 @@
           "message": "Associated token account owner does not match address derivation",
           "docs": [
             "InvalidOwner: Associated token account owner does not match address derivation"
+            {
+  "name": "withdrawExcessLamports",
+  "accounts": [
+    {
+      "name": "sourceAccount",
+      "isMut": true,
+      "isSigner": true
+    },
+    {
+      "name": "destinationAccount",
+      "isMut": true,
+      "isSigner": false
+    },
+    {
+      "name": "systemProgram",
+      "isMut": false,
+      "isSigner": false
+    }
+  ],
+  "args": [
+    {
+      "name": "amount",
+      "type": "u64"
+    }
+  ]
+}
+
           ]
         }
       ]
